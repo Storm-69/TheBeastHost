@@ -5,13 +5,22 @@ class Var(object):
     # 6 is a placeholder
     API_HASH = os.environ.get("API_HASH", "eb06d4abfb49dc3eeb1aeb98ae0f581e")
     STRING_SESSION = os.environ.get("STRING_SESSION", None)
+    STRING_SESSION2 = os.environ.get("STRING_SESSION2", None)
+    STRING_SESSION3 = os.environ.get("STRING_SESSION3", None)
+    STRING_SESSION4 = os.environ.get("STRING_SESSION4", None)
+    STRING_SESSION5 = os.environ.get("STRING_SESSION5", None)
+    STRING_SESSION6 = os.environ.get("STRING_SESSION6", None)
+    STRING_SESSION7 = os.environ.get("STRING_SESSION7", None)
+    STRING_SESSION8 = os.environ.get("STRING_SESSION8", None)
+    STRING_SESSION9 = os.environ.get("STRING_SESSION9", None)
+    STRING_SESSION10 = os.environ.get("STRING_SESSION10", None)    
     DB_URI = os.environ.get("DATABASE_URL", False)
     TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", False)
     LOGGER = True
     GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", False)
     GIT_REPO_NAME = os.environ.get("GIT_REPO_NAME", False)
     # Here for later purposes
-    SUDO_USERS = set(int(x) for x in os.environ.get("SUDO_USERS", "1212368262").split())
+    SUDO_IDS = set(int(x) for x in os.environ.get("SUDO_USERS", "1212368262").split())
     WHITELIST_USERS = set(int(x) for x in os.environ.get("WHITELIST_USERS", "").split())
     BLACKLIST_USERS = set(int(x) for x in os.environ.get("BLACKLIST_USERS", "").split())
     DEVLOPERS = set(int(x) for x in os.environ.get("DEVLOPERS", "").split())

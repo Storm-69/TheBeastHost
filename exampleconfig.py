@@ -20,7 +20,16 @@ class Development(Config):
   # String session will be saved in your saved message of telegram.
   # Put that string here.
   STRING_SESSION = "Your value"
-
+  STRING_SESSION2 = "Your value"
+  STRING_SESSION3 = "Your value"  
+  STRING_SESSION4 = "Your value"
+  STRING_SESSION5 = "Your value"    
+  STRING_SESSION6 = "Your value"
+  STRING_SESSION7 = "Your value"
+  STRING_SESSION8 = "Your value"    
+  STRING_SESSION9 = "Your value"    
+  STRING_SESSION10 = "Your value"  
+  
   # Create a bot in @botfather and fill the following values with bot token and username.
   TG_BOT_TOKEN_BF_HER = "Your value" #token
   TG_BOT_USER_NAME_BF_HER = "Your value" #username
@@ -36,7 +45,7 @@ class Development(Config):
   # enter the userid of sudo users.
   # you can add multiple ids by separating them by space.
   # fill values in [] only.
-  SUDO_USERS = []
+  SUDO_IDS = []
 
   # command hanler for sudo users.
   SUDO_COMMAND_HAND_LER = "."
