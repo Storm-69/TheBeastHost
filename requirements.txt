@@ -1,0 +1,10 @@
+asyncurban
+async_generator
+heroku3
+pathlib
+pybase64>=0.4.0
+pylast
+pySmartDL
+requests>=2.18.4
+sqlalchemy==1.3.23
+telethon==1.19.0
