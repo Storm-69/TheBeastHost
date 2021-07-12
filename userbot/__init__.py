@@ -9,12 +9,12 @@ from sys import argv
 from telethon import TelegramClient, events
 from telethon.errors.rpcerrorlist import PhoneNumberInvalidError
 from telethon.sessions import StringSession
-from userbot.Config import API_ID, API_HASH, STRING_SESSION, STRING_SESSION2, STRING_SESSION3, STRING_SESSION4 ,STRING_SESSION5, STRING_SESSION6, STRING_SESSION7, STRING_SESSION8 ,STRING_SESSION9, STRING_SESSION10, SUDO_IDS
+from var import Var
 from userbot.utils import load_module
 from userbot import LOAD_PLUG, LOGS, mafiaversion
 from pathlib import Path
-from var import Var
 from userbot.helpers import functions as simpdef
+from userbot.Config import API_ID, API_HASH, STRING_SESSION, STRING_SESSION2, STRING_SESSION3, STRING_SESSION4 ,STRING_SESSION5, STRING_SESSION6, STRING_SESSION7, STRING_SESSION8 ,STRING_SESSION9, STRING_SESSION10, SUDO_IDS
 
 
 StartTime = time.time()
