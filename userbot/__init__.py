@@ -486,17 +486,6 @@ for binary, path in binaries.items():
     downloader.start()
     os.chmod(path, 0o755)
 
-# Global Variables
-COUNT_MSG = 0
-USERS = {}
-COUNT_PM = {}
-LASTMSG = {}
-CMD_HELP = {}
-ISAFK = False
-AFKREASON = None
-SUDO_LIST = {}
-
-
 from userbot.helpers import *
 from userbot.helpers import functions as mafiadef
 from userbot.cmdhelp import CmdHelp
