@@ -18,7 +18,50 @@ async def add_bot(bot_token):
     sessionone.me = await sessionone.get_me() 
     sessionone.uid = telethon.utils.get_peer_id(sessionone.me)
 
+async def add_bot(bot_token):
+    await sessiontwo.start(bot_token)
+    sessiontwo.me = await sessiontwo.get_me() 
+    sessiontwo.uid = telethon.utils.get_peer_id(sessiontwo.me)
 
+async def add_bot(bot_token):
+    await sessionthree.start(bot_token)
+    sessionthree.me = await sessionthree.get_me() 
+    sessionthree.uid = telethon.utils.get_peer_id(sessionthree.me)
+
+async def add_bot(bot_token):
+    await sessionfour.start(bot_token)
+    sessionfour.me = await sessionfour.get_me() 
+    sessionfour.uid = telethon.utils.get_peer_id(sessionfour.me)
+
+async def add_bot(bot_token):
+    await sessionfive.start(bot_token)
+    sessionfive.me = await sessionfive.get_me() 
+    sessionfive.uid = telethon.utils.get_peer_id(sessionfive.me)
+
+async def add_bot(bot_token):
+    await sessionsix.start(bot_token)
+    sessionsix.me = await sessionsix.get_me() 
+    sessionsix.uid = telethon.utils.get_peer_id(sessionsix.me)
+
+async def add_bot(bot_token):
+    await sessionseven.start(bot_token)
+    sessionseven.me = await sessionseven.get_me() 
+    sessionseven.uid = telethon.utils.get_peer_id(sessionseven.me)
+
+async def add_bot(bot_token):
+    await sessioneight.start(bot_token)
+    sessioneight.me = await sessioneight.get_me() 
+    sessioneight.uid = telethon.utils.get_peer_id(sessioneight.me)
+
+async def add_bot(bot_token):
+    await sessionnine.start(bot_token)
+    sessionnine.me = await sessionnine.get_me() 
+    sessionnine.uid = telethon.utils.get_peer_id(sessionnine.me)
+
+async def add_bot(bot_token):
+    await sessionten.start(bot_token)
+    sessionten.me = await sessionten.get_me() 
+    sessionten.uid = telethon.utils.get_peer_id(sessionten.me)
 
 if len(argv) not in (1, 3, 4):
 # ONE
@@ -89,155 +132,155 @@ else:
 
 # FOUR
 try:
-    sessionone.disconnect()
+    sessionfour.disconnect()
 else:
-    sessionone.tgbot = None
+    sessionfour.tgbot = None
     if Var.TG_BOT_USER_NAME_BF_HER is not None:
         print("Initiating Inline Bot")
         # ForTheGreatrerGood of beautification
-        sessionone.tgbot = TelegramClient(
+        sessionfour.tgbot = TelegramClient(
             "TG_BOT_TOKEN",
             api_id=Var.APP_ID,
             api_hash=Var.API_HASH
         ).start(bot_token=Var.TG_BOT_TOKEN_BF_HER)
         print("Initialisation finished with no errors")
         print("Starting Userbot")
-        sessionone.loop.run_until_complete(add_bot(Var.TG_BOT_USER_NAME_BF_HER))
+        sessionfour.loop.run_until_complete(add_bot(Var.TG_BOT_USER_NAME_BF_HER))
         print("Startup Completed")
     else:
-        sessionone.start()
+        sessionfour.start()
     except Exception as e:
         pass    
  
 # FIVE
 try:
-    sessionone.disconnect()
+    sessionfive.disconnect()
 else:
-    sessionone.tgbot = None
+    sessionfive.tgbot = None
     if Var.TG_BOT_USER_NAME_BF_HER is not None:
         print("Initiating Inline Bot")
         # ForTheGreatrerGood of beautification
-        sessionone.tgbot = TelegramClient(
+        sessionfive.tgbot = TelegramClient(
             "TG_BOT_TOKEN",
             api_id=Var.APP_ID,
             api_hash=Var.API_HASH
         ).start(bot_token=Var.TG_BOT_TOKEN_BF_HER)
         print("Initialisation finished with no errors")
         print("Starting Userbot")
-        sessionone.loop.run_until_complete(add_bot(Var.TG_BOT_USER_NAME_BF_HER))
+        sessionfive.loop.run_until_complete(add_bot(Var.TG_BOT_USER_NAME_BF_HER))
         print("Startup Completed")
     else:
-        sessionone.start()
+        sessionfive.start()
     except Exception as e:
         pass    
         
 # SIX
 try:
-    sessionone.disconnect()
+    sessionsix.disconnect()
 else:
-    sessionone.tgbot = None
+    sessionsix.tgbot = None
     if Var.TG_BOT_USER_NAME_BF_HER is not None:
         print("Initiating Inline Bot")
         # ForTheGreatrerGood of beautification
-        sessionone.tgbot = TelegramClient(
+        sessionsix.tgbot = TelegramClient(
             "TG_BOT_TOKEN",
             api_id=Var.APP_ID,
             api_hash=Var.API_HASH
         ).start(bot_token=Var.TG_BOT_TOKEN_BF_HER)
         print("Initialisation finished with no errors")
         print("Starting Userbot")
-        sessionone.loop.run_until_complete(add_bot(Var.TG_BOT_USER_NAME_BF_HER))
+        sessionsix.loop.run_until_complete(add_bot(Var.TG_BOT_USER_NAME_BF_HER))
         print("Startup Completed")
     else:
-        sessionone.start()
+        sessionsix.start()
     except Exception as e:
         pass    
         
 # SEVEN
 try:
-    sessionone.disconnect()
+    sessionseven.disconnect()
 else:
-    sessionone.tgbot = None
+    sessionseven.tgbot = None
     if Var.TG_BOT_USER_NAME_BF_HER is not None:
         print("Initiating Inline Bot")
         # ForTheGreatrerGood of beautification
-        sessionone.tgbot = TelegramClient(
+        sessionseven.tgbot = TelegramClient(
             "TG_BOT_TOKEN",
             api_id=Var.APP_ID,
             api_hash=Var.API_HASH
         ).start(bot_token=Var.TG_BOT_TOKEN_BF_HER)
         print("Initialisation finished with no errors")
         print("Starting Userbot")
-        sessionone.loop.run_until_complete(add_bot(Var.TG_BOT_USER_NAME_BF_HER))
+        sessionseven.loop.run_until_complete(add_bot(Var.TG_BOT_USER_NAME_BF_HER))
         print("Startup Completed")
     else:
-        sessionone.start()
+        sessionseven.start()
     except Exception as e:
         pass                                           
                  
 # EIGHT
 try:
-    sessionone.disconnect()
+    sessioneight.disconnect()
 else:
-    sessionone.tgbot = None
+    sessioneight.tgbot = None
     if Var.TG_BOT_USER_NAME_BF_HER is not None:
         print("Initiating Inline Bot")
         # ForTheGreatrerGood of beautification
-        sessionone.tgbot = TelegramClient(
+        sessioneight.tgbot = TelegramClient(
             "TG_BOT_TOKEN",
             api_id=Var.APP_ID,
             api_hash=Var.API_HASH
         ).start(bot_token=Var.TG_BOT_TOKEN_BF_HER)
         print("Initialisation finished with no errors")
         print("Starting Userbot")
-        sessionone.loop.run_until_complete(add_bot(Var.TG_BOT_USER_NAME_BF_HER))
+        sessioneight.loop.run_until_complete(add_bot(Var.TG_BOT_USER_NAME_BF_HER))
         print("Startup Completed")
     else:
-        sessionone.start()
+        sessioneight.start()
     except Exception as e:
         pass    
         
 # NINE
 try:
-    sessionone.disconnect()
+    sessionnine.disconnect()
 else:
-    sessionone.tgbot = None
+    sessionnine.tgbot = None
     if Var.TG_BOT_USER_NAME_BF_HER is not None:
         print("Initiating Inline Bot")
         # ForTheGreatrerGood of beautification
-        sessionone.tgbot = TelegramClient(
+        sessionnine.tgbot = TelegramClient(
             "TG_BOT_TOKEN",
             api_id=Var.APP_ID,
             api_hash=Var.API_HASH
         ).start(bot_token=Var.TG_BOT_TOKEN_BF_HER)
         print("Initialisation finished with no errors")
         print("Starting Userbot")
-        sessionone.loop.run_until_complete(add_bot(Var.TG_BOT_USER_NAME_BF_HER))
+        sessionnine.loop.run_until_complete(add_bot(Var.TG_BOT_USER_NAME_BF_HER))
         print("Startup Completed")
     else:
-        sessionone.start()
+        sessionnine.start()
     except Exception as e:
         pass    
  
 # TEN
 try:
-    sessionone.disconnect()
+    sessionten.disconnect()
 else:
-    sessionone.tgbot = None
+    sessionten.tgbot = None
     if Var.TG_BOT_USER_NAME_BF_HER is not None:
         print("Initiating Inline Bot")
         # ForTheGreatrerGood of beautification
-        sessionone.tgbot = TelegramClient(
+        sessionten.tgbot = TelegramClient(
             "TG_BOT_TOKEN",
             api_id=Var.APP_ID,
             api_hash=Var.API_HASH
         ).start(bot_token=Var.TG_BOT_TOKEN_BF_HER)
         print("Initialisation finished with no errors")
         print("Starting Userbot")
-        sessionone.loop.run_until_complete(add_bot(Var.TG_BOT_USER_NAME_BF_HER))
+        sessionten.loop.run_until_complete(add_bot(Var.TG_BOT_USER_NAME_BF_HER))
         print("Startup Completed")
     else:
-        sessionone.start()
+        sessionten.start()
     except Exception as e:
         pass    
         
